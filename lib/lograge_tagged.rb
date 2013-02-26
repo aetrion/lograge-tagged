@@ -1,5 +1,5 @@
 require 'lograge'
-require 'lograge-tagged/version'
+require 'lograge_tagged/version'
 
 module LogrageTagged
   module LogSubscriber
