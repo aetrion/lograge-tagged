@@ -8,14 +8,14 @@ describe LogrageTagged::LogSubscriber do
   LogrageLogSubscriber = Class.new do
     include LogrageTagged::LogSubscriber
     def process_action_lograge(payload)
-      payload.map { |k,v| string << "#{k}=#{v}" }.join(" ")
+      payload.map { |k,v| "#{k}=#{v}" }.join(" ")
     end
   end
 
   describe "#process_action_tagged" do
     it "prepends the tag to the processed payload" do
       line = subject.process_action_tagged(foo: "1", bar: "2")
-      line.should eq("")
+      line.should eq("[request.app] foo=1 bar=2")
     end
   end
 

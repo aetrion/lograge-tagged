@@ -20,7 +20,7 @@ module LogrageTagged
         { params: event.payload[:params] }
       }
     end
-  end
+  end if defined?(Rails)
 end
 
 Lograge::RequestLogSubscriber.send(:include, LogrageTagged::LogSubscriber)
