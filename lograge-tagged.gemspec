@@ -18,4 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_runtime_dependency "lograge", "~> 0.1.0"
+  gem.add_development_dependency "rspec"
 end
