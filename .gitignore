@@ -1,0 +1,4 @@
+# Bundler
+.bundle
+Gemfile.lock
+pkg/*
