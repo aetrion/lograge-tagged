@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = LogrageTagged::VERSION
   gem.authors       = ["Simone Carletti"]
   gem.email         = ["weppos@weppos.net"]
-  gem.description   = %q{A tagged LogSubscriber for Lograge}
   gem.summary       = %q{A tagged LogSubscriber for Lograge}
+  gem.description   = %q{A tagged LogSubscriber for Lograge.}
   gem.homepage      = "https://github.com/aetrion/lograge-tagged"
 
   gem.files         = `git ls-files`.split($/)
