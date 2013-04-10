@@ -14,7 +14,7 @@ module LogrageTagged
   end
 
   class Railtie < Rails::Railtie
-    initializer "lograge-tagged.initialize" do |app|
+    initializer "lograge-tagged", :before => :lograge do |app|
       app.config.lograge.log_format = :tagged
       app.config.lograge.custom_options = ->(event) {
         { params: event.payload[:params] }
