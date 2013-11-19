@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{A tagged LogSubscriber for Lograge}
   gem.description   = %q{A tagged LogSubscriber for Lograge.}
   gem.homepage      = "https://github.com/aetrion/lograge-tagged"
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
