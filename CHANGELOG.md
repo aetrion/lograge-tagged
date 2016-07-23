@@ -1,6 +1,8 @@
 # Changelog
 
-## master
+## Release 0.3.0
+
+- CHANGED: The tag name is now customizable
 
 - CHANGED: Relaxed lograge dependency
 
