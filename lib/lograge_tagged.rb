@@ -3,8 +3,11 @@ require 'lograge_tagged/version'
 
 module LogrageTagged
   class TaggedKeyValueFormatter < Lograge::Formatters::KeyValue
+    def initialize(tag = "request.app")
+      @tag = tag
+    end
     def call(data)
-      "[request.app] #{super}"
+      "[#{@tag}] #{super}"
     end
   end
 
