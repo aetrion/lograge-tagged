@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+- CHANGED: Relaxed lograge dependency
+
 ## Release 0.2.0
 
 - FIXED: Compatibility with the new syntax in Lograge > 0.2.1
