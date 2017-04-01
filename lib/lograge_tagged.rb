@@ -12,7 +12,9 @@ module LogrageTagged
   end
 
   class Railtie < Rails::Railtie
-    initializer "lograge-tagged", before: :lograge do |app|
+    require 'lograge/railtie'
+
+    config.after_initialize do |app|
       app.config.lograge.formatter = LogrageTagged::TaggedKeyValueFormatter.new
       app.config.lograge.custom_options = ->(event) { { params: event.payload[:params] } }
     end
