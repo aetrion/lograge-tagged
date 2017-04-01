@@ -1,5 +1,11 @@
 # Changelog
 
+## Release 0.3.1
+
+- FIXED: Fix load compatibility
+
+- Remove deprecated setting
+
 ## Release 0.3.0
 
 - CHANGED: The tag name is now customizable
