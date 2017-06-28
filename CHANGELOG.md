@@ -1,5 +1,9 @@
 # Changelog
 
+## Release 0.3.2
+
+- FIXED: Fix precedence, lograge ignored the setting set by this library
+
 ## Release 0.3.1
 
 - FIXED: Fix load compatibility
