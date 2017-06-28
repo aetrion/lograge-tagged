@@ -17,7 +17,10 @@ module LogrageTagged
     config.after_initialize do |app|
       app.config.lograge.formatter = LogrageTagged::TaggedKeyValueFormatter.new
       app.config.lograge.custom_options = ->(event) { { params: event.payload[:params] } }
-      Lograge.setup(app) if app.config.lograge.enabled
+      if app.config.lograge.enabled
+        Lograge.set_formatter
+        Lograge.set_lograge_log_options
+      end
     end
   end if defined?(Rails)
 end
